@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Loja ___ - Edição Produto</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h2>Editar produto</h2>
+        </div>
+        <div class="container">
+            <a href="index.html">Página inicial</a>
+            <a href="produtos.html">Ver Produtos</a>
+            <a href="cad-produtos.html">Cadastrar Produto</a>
+        </div>
+        <div class="container">
+            <form id="ed-prod">
+                <div>
+                    <p>Nome do produto: "nome-antigo"</p>
+                    <label for="nome-novo">Novo nome</label>
+                    <input id="nome-novo" name="nome-novo" type="text">
+                </div>
+                <div>
+                    <p>Digite a nova descrição: </p>
+                    <textarea id="nova-descricao" form="ed-prod"></textarea>   
+                </div>
+                <div>
+                    <label for="qtd-reserva">Quantidade reservada: </label>
+                    <p id="minus-r">-</p>
+                    <input id="qtd-reserva" name="qtd-reserva" type="number" min="0" placeholder="0">
+                    <p id="plus-r">+</p>
+                </div>
+                <div>
+                    <label for="qtd-disponivel">Quantidade disponivel: </label>
+                    <p id="minus-d">-</p>
+                    <input id="qtd-disponivel" name="qtd-disponivel" type="number" min="0" placeholder="0">
+                    <p id="plus-d">+</p>
+                </div>
+                <div>
+                    <label for="qtd-estoque">Quantidade estoque: </label>
+                    <p id="minus-e">-</p>
+                    <input id="qtd-estoque" name="qtd-estoque" type="number" min="0" placeholder="0">
+                    <p id="plus-e">+</p>
+                </div>
+                <div>
+                    <label for="preco">Novo Preço: </label>
+                    <input id="preco" name="preco" type="number" step="0.01" min="0" placeholder="0.00">
+                </div>
+                <div>
+                    <label for="foto">Foto do produto: </label>
+                    <input id="foto" name="foto" type="file">
+                </div>
+                <div>
+                    <input id="submit" type="submit" value="Editar produto">
+                    <input id="reset" type="reset" value="Resetar">
+                </div>
+            </form>
+            <button id='del-button'>Deletar produto</button>
+        </div>
+    </main>
+</body>
+</html>

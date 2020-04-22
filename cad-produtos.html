@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Loja ___ - Cadastro de Produtos</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h2>Realize o cadastro de produtos aqui</h2>
+        </div>
+        <div class="container">
+            <h3>Navegação</h3>
+            <nav>
+                <a href="index.html">Página Inicial</a>
+                <a href="produtos.html">Visualizar produtos</a>
+            </nav>
+        </div>
+        <div class="container">
+            <form id="cad-prod">
+                <h3>Adicionar produto</h3>
+                <div>
+                    <label for="nome">Nome: </label>
+                    <input id="nome" name="nome" type="text">
+                </div>
+                <div>
+                    <label for="descricao">Descrição: </label>
+                    <textarea id="descricao"form="cad-prod" placeholder="Descreva o produto"></textarea>
+                </div>
+                <div>
+                    <label for="preco">Preço: </label>
+                    <input id="preco" name="preco" type="number" step="0.01" min="0" placeholder="0.00">
+                </div>
+                <div>
+                    <label for="foto">Foto do produto: </label>
+                    <input id="foto" name="foto" type="file">
+                </div>
+                <div>
+                    <label for="qtd-estoque">Quantidade em estoque: </label>
+                    <input id="qtd-estoque" name="qtd-estoque" type="number" min="1" placeholder="0">
+                </div>
+                <div>
+                    <label for="qtd-reserva">Quantidade reservada: </label>
+                    <input id="qtd-reserva" name="qtd-reserva" type="number" min="0" placeholder="0">
+                </div>
+                <div>
+                    <label for="qtd-disponivel">Quantidade disponível: </label>
+                    <input id="qtd-disponivel" name="qtd-disponivel" type="number" min="0" placeholder="0">
+                </div>
+                <div>
+                    <input id="submit" type="submit" value="Cadastrar produto">
+                    <input id="reset" type="reset" value="Resetar">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
